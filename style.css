@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #181818;
+    font-family: 'Della Respira';
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0.5rem 0;
+}
+
+header .nav {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.sec1 {
+    width: 100%;
+}
+
+.sec1 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 1.5rem 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec1 .container .left {
+    width: 50%;
+    color: white;
+}
+
+.sec1 .container .left h1 {
+    font-size: 75px;
+    color: #fec675;
+    text-shadow: 10px 10px 10px 10px rgb(230, 230, 213);
+}
+
+.sec1 .container .left p {
+    width: 500px;
+    color: white;
+    padding-top: 1rem;
+}
+
+.sec1 .container .left button {
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    background: rgb(138, 138, 56);
+    margin-top: 1.5rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    height: 45px;
+}
+
+.sec1 .container .right img {
+    width: 500px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .sec1 .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sec1 .container .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec1 .container .left p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sec1 .container .left h1 {
+        font-size: 50px;
+    }
+
+    .sec1 .container .right {
+        width: 90%;
+        text-align: center;
+        margin-top: 2.5em;
+    }
+
+    .sec1 .container .right img {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    header {
+        display: none;
+    }
+}
+
+/* Section 2 */
+
+.sec2 {
+    width: 100%;
+    padding: 4.25rem 10px;
+}
+
+.sec2 .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: #323232;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 5px 5px rgb(245, 245, 87);
+}
+
+
+.sec2 .container .right {
+    width: 450px;
+}
+
+.sec2 .container .left img {
+    width: 400px;
+    position: relative;
+    top: -50px;
+}
+
+.sec2 .container .petit {
+    font-size: 13px;
+    color: #fec675;
+}
+
+.sec2 .container h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.sec2 .container .para {
+    color: white;
+    padding-top: 1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .sec2 .container {
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+    }
+
+    .sec2 .container .right {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sec2 .container .left img {
+        width: 90%;
+    }
+
+    .sec2 .container .left {
+        text-align: center;
+    }
+
+    .sec2 .container .right h1 {
+        font-size: 50px;
+    }
+}
+
+/* Section 3 */
+.sec3 {
+    width: 100%;
+    padding: 4.25rem 0;
+    margin-top: 1.5rem;
+    background: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec3 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.sec3 .container .left img {
+    width: 350px;
+}
+
+.sec3 .container .right {
+    width: 500px
+}
+
+.sec3 .container .right h1 {
+    color: #fec675;
+    font-size: 60px;
+    text-shadow: 2px 1px 10px #fec675;
+}
+
+.sec3 .container .right p {
+    color: white;
+    margin: 1.5rem 0;
+}
+
+.sec3 .container .right button {
+    padding: 10px 15px;
+    color: white;
+    background: #836740;
+    width: 150px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 900px) {
+    .sec3 .container {
+        flex-direction: column;
+    }
+
+    .sec3 .container .left {
+        width: 90%;
+        text-align: center;
+    }
+
+    .sec3 .container .right {
+        width: 80%;
+        text-align: center;
+        margin-top: 2.5em;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .sec3 .container .left img {
+        width: 90%;
+    }
+
+    .sec3 .container .right h1 {
+        font-size: 45px;
+    }
+}
+
+
+/* Section 4 */
+
+.sec4 {
+    width: 100%;
+    padding: 4.25rem 0;
+}
+
+.sec4 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sec4 .container .title {
+    text-align: center;
+    color: white;
+}
+
+.sec4 .container .title h2 {
+    font-size: 45px;
+    color: #fec675;
+    text-shadow: 2px 1px 10px #fec675;
+    ;
+}
+
+.sec4 .container .title p {
+    font-size: 17px;
+    padding-top: 0.5rem;
+    opacity: .8;
+}
+
+.sec4 .container .content {
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec4 .container .content .card {
+    margin: 20px;
+    height: 350px;
+    text-align: center;
+    border: 2px solid #fec675;
+    box-shadow: 3px 5px 15px #fec675;
+    width: 250px;
+    cursor: pointer;
+    padding: 2rem 0;
+    transition: 0.2s;
+}
+
+.sec4 .container .content .card .haut {
+    width: 100%;
+    height: 35%;
+}
+
+.sec4 .container .content .card .mid {
+    color: white;
+    font-size: 27px;
+    margin: 1.5rem 0;
+}
+
+.sec4 .container .content .card .bas button {
+    padding: 10px 15px;
+    color: white;
+    background: #836740;
+    width: 80%;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sec4 .container .content .change{
+    width: 125px;
+}
+
+.sec4 .container .content .card:hover{
+    transform: translateY(-5px);
+}
+
+/* Section Special Slider */
+
+.slider{
+    width: 100%;
+    padding: 4.25rem 0;
+    background: #323232;
+}
+
+.slider .container{
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider .container i{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.slider .container .content{
+    width: 60%;
+    height: 100%;
+}
+
+.slider .container .content img{
+    width: 100%;
+    display: none;
+}
+
+.slider .container .content img.active{
+    display: block;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    padding: 4.25rem 0;
+    background: #181818;
+}
+
+footer .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container .content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+footer .container .content h2{
+    color: #fec675;
+    margin-bottom: 1em;
+}
+
+footer .container .content p{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+footer .container .ligne{
+    width: 100%;
+    height: 2px;
+    background: rgb(59, 59, 59);
+}
+
+footer .container .credit{
+    text-align: center;
+    color: white;
+    padding-top: 1.5rem;
+}
+
+@media screen and (max-width: 600px){
+    
+    footer{
+        padding: 0;
+    }
+    footer .container .content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .container .content h2{
+        margin-top: 2em;
+    }
+}
